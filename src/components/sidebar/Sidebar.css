@@ -1,0 +1,70 @@
+ .SidebarContainer{
+  text-align: center;
+}
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+  }
+  .close-btn {
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    color: palevioletred;
+    transition: var(--transition);
+    cursor: pointer;
+    color: red;
+    margin-top: 0.2rem;
+  }
+  .close-btn:hover {
+    color: red;
+  }
+  .logo {
+    justify-self: center;
+    height: 45px;
+  }
+  .links {
+    margin-bottom: 2rem;
+    list-style: none;
+
+  }
+  .links a {
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+    text-transform: capitalize;
+    padding: 1rem 1.5rem;
+    color: gray;
+    transition: var(--transition);
+    letter-spacing: 3px;
+  }
+  .links a:hover {
+    padding: 1rem 1.5rem;
+    padding-left: 2rem;
+    background: gray;
+    color: whitesmoke;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background: white;
+    transition: width 2s;
+    transform: translate(-100%);
+    z-index: -1;
+  }
+  .show-sidebar {
+    transform: translate(0);
+    z-index: 999;
+  }
+  .cart-btn-wrapper {
+    margin: 2rem auto;
+  }
+  @media screen and (min-width: 800px) {
+    .sidebar {
+      display: none;
+    }
+  }

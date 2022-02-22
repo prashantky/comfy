@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {ProductsStateProvider}  from './context/products-context'
+//import Products_Reducer,{initialState }from '../src/reducer/Product_Reducer'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <ProductsStateProvider  >
     <App />
-  </React.StrictMode>,
+  </ProductsStateProvider>,
   document.getElementById('root')
 );
 

@@ -6,11 +6,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {ProductsStateProvider}  from './context/products-context'
+import { FilterProvider } from './context/filter_context';
 //import Products_Reducer,{initialState }from '../src/reducer/Product_Reducer'
 
 ReactDOM.render(
   <ProductsStateProvider  >
+    <FilterProvider>
     <App />
+    </FilterProvider>
+    
   </ProductsStateProvider>,
   document.getElementById('root')
 );

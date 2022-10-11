@@ -1,6 +1,6 @@
 .Wrapper{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
   width: 225px;
  }
@@ -10,7 +10,9 @@
     letter-spacing: var(--spacing);
     color: var(--clr-grey-1);
     display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 13px;
   }
   .cart-container {
     display: flex;
@@ -39,6 +41,7 @@
     padding: 12px;
   }
   .auth-btn {
+    margin-left: 25px;
     display: flex;
     align-items: center;
     background: transparent;

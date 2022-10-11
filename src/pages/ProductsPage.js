@@ -1,22 +1,29 @@
 import React from 'react'
 import styled from 'styled-components'
 //import { Filters, ProductList, Sort, PageHero } from '../components'
-
+import {Filter} from "../components/filter/Filter"
+import  {ProductList}  from '../components/productlist/ProductList'
 const ProductsPage = () => {
-  return <h4>products page</h4>
+  return (
+    <>
+    <div className='container'>
+      <div className='row'>
+        <div className='d-flex'>
+          <div className='row'>
+            <div className="col-4">
+              <Filter/>
+            </div>
+          </div>
+          <div className="col-8">
+              <ProductList/>
+            </div>
+        </div>
+      </div>
+    </div>
+    </>
+  )
 }
 
-const Wrapper = styled.div`
-  .products {
-    display: grid;
-    gap: 3rem 1.5rem;
-    margin: 4rem auto;
-  }
-  @media (min-width: 768px) {
-    .products {
-      grid-template-columns: 200px 1fr;
-    }
-  }
-`
+
 
 export default ProductsPage
